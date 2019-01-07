@@ -3,7 +3,11 @@ laravel5.5 Component_login
 #### API
 从终端运行Composer require命令：
 ```
-composer require wangliang/test-for-laravel:^v1.1
+composer require wangliang/laravel-login:^v1.0
+```
+或  composer 文件中  composer update
+```
+"wangliang/laravel-login": "^v1.0"
 ```
 在config/app    providers数组中添加一个新行：
 Wangliang\Test\TestServiceProvider::class
