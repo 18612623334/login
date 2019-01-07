@@ -1,14 +1,11 @@
 {
-    "name": "wangliang/test-for-laravel",
+    "name": "wangliang/laravel-login",
     "authors": [
         {
             "name": "wangliang",
             "email": "970428448@qq.com"
         }
     ],
-    "require": {
-        "wangliang/test-for-laravel": "v1.1"
-    },
     
     "autoload": {
         "psr-4": {
