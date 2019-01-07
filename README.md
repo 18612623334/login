@@ -10,8 +10,9 @@ composer require wangliang/laravel-login:^v1.0
 "wangliang/laravel-login": "^v1.0"
 ```
 在config/app    providers数组中添加一个新行：
+```
 Wangliang\Test\TestServiceProvider::class
-
+```
 从终端运行发布服务 命令：
 ```
 php artisan vendor:publish --  
