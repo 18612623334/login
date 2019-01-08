@@ -55,7 +55,10 @@ class User extends Authenticatable
      */
     public static function loginError($phone)
     {
-        $res = self::where('phone', $phone)->select('login_error_number', 'login_error_date')->first()->toArray();
+        $res = self::where('phone', $phone)->select('login_error_number', 'login_error_date')->first();
+        if($res){
+            $res = $res->toArray();
+        }
         if ($res) {
             $data['login_error_number'] = $res['login_error_number'] + 1;
             $data['login_error_date'] = date('Y-m-d H:i:s', time());

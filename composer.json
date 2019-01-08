@@ -9,7 +9,7 @@
     
     "autoload": {
         "psr-4": {
-            "Wangliang\\Test\\": "src/"
+            "Wangliang\\Login\\": "src/"
         }
     }
 }
