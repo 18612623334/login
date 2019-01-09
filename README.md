@@ -1,13 +1,13 @@
 laravel5.5 Component_login
 ### 通过Composer安装包。
 #### API
-#### 从终端运行Composer require命令：
+#### 从终端运行Composer update命令：
 ```
-composer require wangliang/test-for-laravel:^v1.1
+"wangliang/laravel-login":"^v1.3"
 ```
 #### 在config/app  providers数组中添加一个新行：
 ```
-Wangliang\Login\TestServiceProvider::class
+Wangliang\Login\TestServiceProvider::class,
 ```
 #### 从终端运行发布服务 命令：
 ```
@@ -17,7 +17,7 @@ php artisan vendor:publish --
 ```
 php artisan migrate (先删除框架自带的user数据迁移文件)(关掉laravel config/database 下的mysql 严格模式 strict:false)
 ```
-#### 在 app/RouteServiceProvider 修改路由
+#### 在 app/Providers/RouteServiceProvider 修改路由
 ##### mapApiRoutes(方法)
 ```
 foreach (glob(base_path('routes/Api') . '/*.php') as $file) {

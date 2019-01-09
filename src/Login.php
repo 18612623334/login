@@ -1,11 +1,11 @@
 <?php
 
-namespace wangliang\Test;
+namespace wangliang\Login;
 
 use Illuminate\Session\SessionManager;
 use Illuminate\Config\Repository;
 
-class Test
+class Login
 {
     /**
      * @param string $msg
